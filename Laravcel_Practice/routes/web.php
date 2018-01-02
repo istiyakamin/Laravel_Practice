@@ -12,9 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$lara = 'Lara';
+	$vel = ['v', 'e', 'l'];
+	return view('welcome', compact('lara', 'vel'));
 });
 
 Route::get('about', function() {
-	return view('about');
+	$a = "About Us";
+	return view('about', compact('a'));
 });

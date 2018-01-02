@@ -79,7 +79,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    {{$lara}}
+                    @foreach($vel as $bel)
+                        {{$bel}}
+                    @endforeach
                 </div>
 
                 <div class="links">

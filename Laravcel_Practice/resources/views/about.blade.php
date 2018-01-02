@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    About US 
+                     {{$a}}
                 </div>
 
                 <div class="links">
