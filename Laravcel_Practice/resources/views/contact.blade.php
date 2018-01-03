@@ -1,7 +1,7 @@
 @extends('layout.app')
 
-@section('tile', "About")
+@section('title', 'Contact')
 
 @section('body')
-    {{$a}}
+    {{$ami}}
 @endsection

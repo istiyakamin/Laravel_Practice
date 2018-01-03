@@ -11,13 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-	$lara = 'Lara';
-	$vel = ['v', 'e', 'l'];
-	return view('welcome', compact('lara', 'vel'));
-});
 
-Route::get('about', function() {
-	$a = "About Us";
-	return view('about', compact('a'));
-});
+Route::get('/', 'pageController@welcome');
+Route::get('contact', 'pageController@contact');
+Route::get('about', 'pageController@about');
+Route::get('join', 'pageController@join');
