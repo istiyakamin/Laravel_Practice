@@ -15,8 +15,9 @@ class songsController extends Controller
      */
     public function index()
     {
+        $serial = 1;
         $songs = song::all();
-        return view('songs.index', compact('songs'));
+        return view('songs.index', compact('songs', 'serial'));
     }
 
     /**
@@ -57,9 +58,10 @@ class songsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(song $song)
     {
-        //
+        //$songs = song::find($song);
+        return view('songs.edit', compact('song'));
     }
 
     /**
