@@ -63,6 +63,29 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            /*This is for song view*/
+            #customers {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            #customers td, #customers th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+            #customers tr:hover {background-color: #ddd;}
+
+            #customers th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
         </style>
     </head>
     <body>
@@ -84,7 +107,10 @@
                 	@section('body')
                     @show
                 </div>
-
+                <div>
+                    @section('songs_list')
+                    @show
+                </div>
                 <div class="links">
                     <a href="{{ url('/')}}">Home</a>
                     <a href="{{ url('about')}}">About</a>
