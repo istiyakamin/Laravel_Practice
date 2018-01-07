@@ -50,6 +50,10 @@
                 font-size: 84px;
             }
 
+            .links{
+                padding: 20px;
+            }
+
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -58,6 +62,12 @@
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+            }
+            .links a:hover {
+                background: green;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                color: white;
             }
 
             .m-b-md {
@@ -107,16 +117,17 @@
                 	@section('body')
                     @show
                 </div>
-                <div>
-                    @section('songs_list')
-                    @show
-                </div>
+
                 <div class="links">
                     <a href="{{ url('/')}}">Home</a>
                     <a href="{{ url('about')}}">About</a>
                     <a href="{{ url('contact')}}">Contact</a>
                     <a href="{{ url('join')}}">Join</a>
                     <a href="{{ url('songs')}}">Songs</a>
+                </div>
+                <div>
+                    @section('songs_list')
+                    @show
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use App\song;
 
 class songsController extends Controller
 {
@@ -14,7 +15,7 @@ class songsController extends Controller
      */
     public function index()
     {
-        $songs = DB::table('songs')->get();
+        $songs = song::all();
         return view('songs.index', compact('songs'));
     }
 
