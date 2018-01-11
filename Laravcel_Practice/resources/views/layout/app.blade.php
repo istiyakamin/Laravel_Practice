@@ -64,7 +64,7 @@
                 text-transform: uppercase;
             }
             .links a:hover {
-                background: green;
+                background: #4CAF50;
                 padding-top: 15px;
                 padding-bottom: 15px;
                 color: white;
