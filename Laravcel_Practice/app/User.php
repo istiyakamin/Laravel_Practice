@@ -12,5 +12,8 @@ class user extends Model
     		return $this->hasOne('App\passport');
     	}
     	
+    	public function mobileNumber(){
+    		return $this->hasMany('App\mobile');
+    	}
     
 }

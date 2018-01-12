@@ -17,4 +17,3 @@ Route::get('contact', 'pageController@contact');
 Route::get('about', 'pageController@about');
 Route::get('join', 'pageController@join');
 Route::resource('songs', 'songsController');
-Route::get('passport_list', 'pageController@passport_list');
