@@ -123,7 +123,6 @@
                     <a href="{{ url('about')}}">About</a>
                     <a href="{{ url('contact')}}">Contact</a>
                     <a href="{{ url('join')}}">Join</a>
-                    <a href="{{ url('passport_list')}}">Pasport</a>
                     <a href="{{ url('songs')}}">Songs</a>
                 </div>
                 <div>
