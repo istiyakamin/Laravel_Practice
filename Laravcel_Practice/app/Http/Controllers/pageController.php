@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
+use App\user;
+use App\passport;
 
 class pageController extends Controller
 {
@@ -26,5 +29,13 @@ class pageController extends Controller
     public function join(){
     	$join = 'Join';
     	return view('join', compact('join'));
+    }
+
+    public function passport_list()
+    {
+        $user = user::all();
+        $passport = passport::all();
+        //return $passport;
+        return view('passport_list', compact('user', 'passport'));
     }
 }
