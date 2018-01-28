@@ -17,3 +17,7 @@ Route::get('contact', 'pageController@contact');
 Route::get('about', 'pageController@about');
 Route::get('join', 'pageController@join');
 Route::resource('songs', 'songsController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
